@@ -1,6 +1,6 @@
 import {test, expect} from '@playwright/test';
 
-test('Login with invalid credentials', async ({page}) => {
+test('Login with invalid password', async ({page}) => {
     await page.goto('https://www.saucedemo.com/');
     await page.locator('[data-test="username"]').click();
     await page.locator('[data-test="username"]').fill('standard_user');
